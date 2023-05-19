@@ -44,38 +44,52 @@ button.add{
 main{
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
+    width: 89%;
     margin: auto auto;
     border: 1px solid blue;
     padding-top: 40px;
+    margin: auto auto;
+
 
 }
 
 .item{
     display: flex;
     flex-flow: row wrap;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: white;
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
+    font-weight: bold;
+
 }
 .item-icone{
-    flex: 10%;
-    border: 1px solid orange;
-    padding: 3%;
+    font-size: 20px;
+    margin: 0px 10px 0px 10px;
+    color: green;
+    cursor: pointer;
+
 }
 .item-nome{
-    flex: 30%;
+    flex: auto;
+    text-align: left;
     border: 1px solid deeppink;
-    padding: 3%;
+    font-size: 20px;
 
 }
-.item-botao{
-    flex: 10%;
-    border: 1px solid green;
-    padding: 3%;
+.item-botao button{
+    background-color:transparent;
+    color: rgb(220, 68, 68);
+    margin: 0px 10px 0px 10px;
+    border: none;
+    flex:auto;
+    font-size: 20px;
+    height: auto;
+    cursor: pointer;
 
-    }
+}
+
 
