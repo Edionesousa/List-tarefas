@@ -11,7 +11,7 @@ h1{
     text-align: center;
     font-size: 3rem;
 }
-
+/**/
 header{
     display: flex;
     flex-flow: row wrap;
@@ -28,6 +28,7 @@ input{
 
 }
 
+/*                        inicio  & corpo                */
 button.add{
     width: 19%;
     cursor: pointer;
@@ -51,7 +52,7 @@ main{
 
 
 }
-/* ate lista modelo */
+/*                       item lista modelo                          */
 .item{
     display: flex;
     flex-flow: row wrap;
@@ -91,7 +92,7 @@ main{
     cursor: pointer;
 }
 
-/*item clicado*/
+/*                     item clicado               */
 
 .fa-circle-check{  
     background-color:transparent;
@@ -105,8 +106,7 @@ main{
     
 }
 .item-clicado{
-    background-color: rgb(161, 184, 184);
+    background-color: rgb(139, 193, 193);
     border: none;
 };
-
 
