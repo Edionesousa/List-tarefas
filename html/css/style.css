@@ -5,7 +5,7 @@
     padding: 0;
 }
 body{
-    background-color: #eeeeee;
+    background-color: #e9e1e1;
 }
 h1{
     text-align: center;
@@ -46,7 +46,6 @@ main{
     flex-flow: row wrap;
     width: 89%;
     margin: auto auto;
-    border: 1px solid blue;
     padding-top: 40px;
     margin: auto auto;
 
@@ -64,6 +63,7 @@ main{
     width: 100%;
     box-shadow: 0 0 20px #ccc;
     font-weight: bold;
+    margin-bottom:2% ;
 
 }
 .item-icone{
@@ -90,9 +90,21 @@ main{
     height: auto;
     cursor: pointer;
 }
+
+.clicado{
+    background-color:transparent;
+    color: rgb(220, 68, 68);
+    margin: 0px 10px 0px 10px;
+    border: none;
+    flex:auto;
+    font-size: 20px;
+    height: auto;
+    cursor: pointer;
+
+}
 .delete{
     background-color: red;
-    
+
 }
 
 
