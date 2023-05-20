@@ -89,7 +89,10 @@ main{
     font-size: 20px;
     height: auto;
     cursor: pointer;
-
+}
+.delete{
+    background-color: red;
+    
 }
 
 
