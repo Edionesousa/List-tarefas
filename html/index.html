@@ -12,13 +12,19 @@
 <body>
     <h1>List-tarefas</h1>
 
+
+    <!--  area de input add-->
+
+
     <header>
         <input id="inputTarefa" type="text" placeholder="Digite suas tarefas">
         <button class="add">Adicionar</button>
 
+
+            <!--  ate lista modelo -->
     </header>
     <main id="areaLista">
-        <div class="item">            
+        <div class="item">     
             <div class="item-icone">
                 <i class="fa-regular fa-circle"></i>
             </div>
@@ -26,9 +32,22 @@
                 Primeira taredo do dia
             </div>
             <div class="item-botao">
-                <button><i class="fa-solid fa-trash"></i></button>
+                <button><i class="fa-solid fa-trash"></i> Deletar</button>
             </div>
         </div>
+        
+        <!--  item clicado -->
+            <div class="item">     
+                <div class="item-icone">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="item-nome">
+                    Primeira tarefa adicionada.
+                </div>
+                <div class="item-botao">
+                    <button><i class="fa-solid fa-trash"></i> Deletar</button>                </div>
+            </div> 
+        
 
     </main>
     <script src="js/script.js"></script>
