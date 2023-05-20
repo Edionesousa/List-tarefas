@@ -51,7 +51,7 @@ main{
 
 
 }
-
+/* ate lista modelo */
 .item{
     display: flex;
     flex-flow: row wrap;
@@ -66,11 +66,6 @@ main{
     margin-bottom:2% ;
 }
 
-.item-clicado{
-    background-color: rgb(161, 184, 184);
-    border: none;
-};
-
 .item-icone{
     font-size: 20px;
     margin: 0px 10px 0px 10px;
@@ -84,7 +79,6 @@ main{
     font-size: 20px;
     padding: 0px 20px 0px 20px;
 
-
 }
 .item-botao button{
     background-color:transparent;
@@ -97,7 +91,9 @@ main{
     cursor: pointer;
 }
 
-.fa-circle-check{   /*item-clicado*/
+/*item clicado*/
+
+.fa-circle-check{  
     background-color:transparent;
     color: green;
     margin: 0px 10px 0px 10px;
@@ -106,7 +102,11 @@ main{
     font-size: 20px;
     height: auto;
     cursor: pointer;
-
+    
 }
+.item-clicado{
+    background-color: rgb(161, 184, 184);
+    border: none;
+};
 
 
