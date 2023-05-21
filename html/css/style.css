@@ -29,7 +29,7 @@ input{
 }
 
 /*                        inicio  & corpo                */
-button.add{
+button{
     width: 19%;
     cursor: pointer;
     background-color: green;
@@ -78,16 +78,16 @@ main{
     flex: auto;
     text-align: left;
     font-size: 20px;
-    padding: 0px 20px 0px 20px;
 
 }
 .item-botao button{
+    display: flex;
     background-color:transparent;
     color: rgb(220, 68, 68);
-    margin: 0px 10px 0px 10px;
+    margin:20px;
     border: none;
     flex:auto;
-    font-size: 20px;
+    font-size: 15px;
     height: auto;
     cursor: pointer;
 }
