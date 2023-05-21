@@ -1,11 +1,12 @@
 let input = document.getElementById("inputTarefa");
 let btnAdd = document.getElementById("btn-add");
 let main = document.getElementById("areaLista");
+let buttonDelet = document.getElementById("button");
 
 function addTarefa(){
-    //pegar o valor digitado no input
+    // PEGAR O VALOR DIGITADO NO INPUT
     let valorInput = input.value;
-    // se nao for vazio, nem nulo, nem indefinido
+    // SE NAO FOR VAZIO,          NAO FOR NULO,              NAO FOR INDEFINIDO
     if((valorInput !== "") && (valorInput !== null) && (valorInput !== undefined)){
         // HTML QUE VAI SER INSERIDO
         let novoItem = `        
@@ -17,17 +18,26 @@ function addTarefa(){
             <div class="item-nome">
             </div>
             <div class="item-botao button">
-                <button id="ptn-add"><i class="fa-solid fa-trash"></i> Deletar</button>
+                <button onclick("delet")id="deletar"><i class="fa-solid fa-trash"></i> Deletar</button>
             </div>
         </div> 
 `
-        // ADICIONAR NOVO ITEM MAIN
+        // ADICIONAR NOVO ITEM HTML MAIN NA TELA
         main.innerHTML += novoItem;
-        // ZERAR OS CAMPO di unput
+        // ZERAR OS CAMPO DO INPUT
         input.value = "";
-        //MANTER O CAMPO INPUT FOCADO
+        // MANTER O CAMPO INPUT FOCADO
         input.focus();
 
         };
     };
+
+
+    input.addEventListener("keyup", function(event){
+        // ADD USANDO TELCA ENTER (13)
+        if(event.keyCode === 13){
+            event.preventDefault();
+            addTarefa();
+        }
+    });
 
