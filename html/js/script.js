@@ -21,7 +21,7 @@ function addTarefa(){
             <div class="item-nome">
             </div>
             <div class="item-botao button">
-                <button onclick="deletar(${contador})" id="deletar"><i class="fa-solid fa-trash"></i> Deletar</button>
+                <button onclick="deletar(${contador})"id="deletar"><i class="fa-solid fa-trash"></i> Deletar</button>
             </div>
         </div> 
         `
@@ -44,7 +44,7 @@ function addTarefa(){
         //DELETAR UMA ATIVIDADE DA MINHA LISTA
 
         function deletar(id){
-            var tarefa = document.getElementById(id);
+            var tarefa =  document.getElementById(id);
             tarefa.remove();
 
         }
