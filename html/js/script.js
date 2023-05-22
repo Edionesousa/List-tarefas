@@ -34,19 +34,19 @@ function addTarefa(){
         };
     };
     
+    //DELETAR UMA ATIVIDADE DA MINHA LISTA
+
+    function deletar(id){
+        var tarefa =  document.getElementById(id);
+        tarefa.remove();
+
+    }
     input.addEventListener("keyup", function(event){
         // ADD USANDO TELCA ENTER (13)
         if(event.keyCode === 13){
             let key = event;
             event.preventDefault();
             addTarefa();
-        }
-        //DELETAR UMA ATIVIDADE DA MINHA LISTA
-
-        function deletar(id){
-            var tarefa =  document.getElementById(id);
-            tarefa.remove();
-
         }
     });
     
