@@ -108,7 +108,7 @@ main{
     
 }
 
-/*TAREFA CONCLUIDA, CLICADA*/
+//
 .fa-cicle-clicado{
     background-color: rgb(139, 193, 193);
     border: none;

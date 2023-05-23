@@ -12,14 +12,15 @@ function addTarefa(){
     if((valorInput !== "") && (valorInput !== null) && (valorInput !== undefined)){
         // HTML QUE VAI SER INSERIDO
         ++contador;
+
         let novoItem = `        
         <div id ="${contador}" class="item">     
             <div onclick="marcarTarefa(${contador})" class="item-icone">
-                <i class="fa-regular fa-circle"></i>
-            ${valorInput}
-            </div>
-            <div onclick="marcarTarefa(${contador})" class="item-nome">
-            </div>
+                <i id="icone_${contador}"class="fa-regular fa-circle"></i>
+                </div>
+                <div onclick="marcarTarefa(${contador})" class="item-nome">
+                ${valorInput}
+                </div>
             <div class="item-botao button">
                 <button onclick="deletar(${contador})"id="deletar"><i class="fa-solid fa-trash"></i> Deletar</button>
             </div>
@@ -37,7 +38,21 @@ function addTarefa(){
         //DELETAR UMA ATIVIDADE DA MINHA LISTA
     function deletar(id){
         var tarefa =  document.getElementById(id);
-        tarefa.remove();
+        tarefa.remove(id);
+
+    }
+        //MARCAR TAREFA COMO CONCLUIDA
+    function tarefaClicada(id){
+        let item = document.getElementById(id);
+        let classe = item.getAttribute("classe");
+        if(classe == "item"){
+            item.classList.remove('fa-cicle-clicado');
+            
+            console.log(item)
+
+
+
+        }
 
     }
     input.addEventListener("keyup", function(event){
