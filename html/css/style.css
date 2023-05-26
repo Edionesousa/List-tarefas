@@ -51,7 +51,7 @@ main{
     flex-flow: row wrap;
     width: 90%;
     margin: auto auto;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     padding-top: 40px;
 
 }
@@ -64,13 +64,14 @@ main{
     background-color: white;
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 15px #777474;
+    margin-bottom: 2%;
 
 
 }
 .item-icone{
     flex: 10%;
-    border:  1px solid orange;
+    /*border:  1px solid orange;a*/
     text-align: center;
     font-size: 2rem;
 
@@ -78,13 +79,13 @@ main{
 }
 .item-nome{
     flex: 70%;
-    border:  1px solid red;
+    /*border:  1px solid red;*/
     font-size: 20px;
     font-weight: bold;
 }
 .item-botao{
     flex: 10%;
-    border:  1px solid blue;
+    /*border:  1px solid blue;*/
 }
 .delete{
     background-color: red;
