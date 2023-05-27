@@ -11,6 +11,7 @@ let btnAdd = document.getElementById("btn-add")
     btnAdd.addEventListener("click", addTarefa);
 
 
+
     //DELETAR HTML INGETADO
 let deletar = document.getElementById("deletar")
 
@@ -41,10 +42,13 @@ function addTarefa(item){
     input.value = "";
     input.focus();
     }
-}
+
+
+    }
 input.addEventListener("keyup", function(e){
     if(e.keyCode === 13){
         e.preventDefault();
         btnAdd.click();
     }
 })
+
