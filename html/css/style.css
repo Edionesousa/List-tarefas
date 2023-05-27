@@ -32,7 +32,7 @@ input{
     
 }
 
-/*BOTAO DE ADICIONAR TAREFAZ A LISTA*/
+/*BOTAO VERDE DE ADICIONAR TAREFAS A LISTA*/
 button.add{
     width: 20%;
     font-size: 1.5rem;
@@ -41,7 +41,7 @@ button.add{
     color: white;
     font-weight: bold;
     border: none;
-    height:150px;
+    height:120px;
     margin: 0;
     padding: 0;
     border-top-right-radius: 10px;
@@ -71,7 +71,7 @@ main{
     margin-bottom: 2%;
 }
 
-/*TAREFA JA CONCLUIDA*/
+/*TAREFAS JA CONCLUIDA*/
 .item.clicado{
     background-color: #c2bbbb;
 }
@@ -88,12 +88,13 @@ main{
     flex: 70%;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 .item-botao{
     flex: 10%;
 }
 
-/*BOTAO QUE DELETA TAREFAS, CONCLUIDAS OU NAO.*/
+/*BOTAO VERMELHO QUE DELETA TAREFAS*/
 .delete{
     background-color: red;
     color: white;
@@ -101,6 +102,8 @@ main{
     padding: 10px;
     height: 80px;
     width: 100%;
+    cursor: pointer;
+    
 }
 
 .mdi-check-circle{
